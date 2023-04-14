@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+  <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Academia Spartan - Suporte</title>
+</head>
+
+<body>
+  <header class="cabecalho">
+    <a href="AcademiaSpartan.html" title="Academia Spartan">
+      <img src="Galeria/logo.png" alt="Academia Spartan" width="270" height="54">
+    </a>
+    <nav>
+      <a href="AcademiaSpartan.html" class="barraNav">Home</a>
+      <a href="AcademiaSpartanForm.html" class="barraNav">Contato</a>
+      <a href="AcademiaSpartan2.html" class="barraNav">Galeria</a>
+    </nav>
+  </header>
+
+  <main>
+    <h3 class="bemVindos">Insira seus dados abaixo:</h3>
+
+    <form action="AcademiaSpartanAgrad.html" method="get">
+
+      <div>
+        <aside class="borda">
+          <h3>Especialidades:</h3>
+          <ol class="listaForm">
+            <li>
+              <h4>Dança</h4>
+              <ul class="listaProfs">
+                <li>Prof. Alessandra Maria </li>
+                <li>Prof. Douglas Rogerio</li>
+                <li>Prof. Silvana Silva</li>
+              </ul>
+            </li>
+
+            <li>
+              <h4>Musculação</h4>
+              <ul class="listaProfs">
+                <li>Prof. Leonardo Pereira </li>
+                <li>Prof. Luiz Paulo </li>
+                <li>Prof. Vanessa </li>
+              </ul>
+            </li>
+
+            <li>
+              <h4>Spinning</h4>
+              <ul class="listaProfs">
+                <li>Prof. Angelo Romero </li>
+                <li>Prof. Cassio Ramos </li>
+                <li>Prof. Felipe Luiz </li>
+              </ul>
+            </li>
+          </ol>
+        </aside>
+
+        <fieldset id="dados" class="borda">
+          <legend>Dados:</legend>
+          <ol class="listaForm">
+            <li>
+              <label for="nome">Nome*</label>
+              <br>
+              <input type="text" id="nome" name="Nome" class="boxTextForm" required>
+            </li>
+
+            <li>
+              <label for="produto">Cpf*</label>
+              <br>
+              <input type="text" id="produto" name="produto" pattern="\d{3}.\d{3}.\d{3}-\d{2}" class="boxTextForm"
+                required>
+            </li>
+
+            <li>
+              <label for="email">E-mail*</label>
+              <br>
+              <input type="email" id="email" name="email" class="boxTextForm" required>
+            </li>
+
+            <li>
+              <label for="Data">Data de Nascimento*</label>
+              <br>
+              <input type="date" id="Data" name="Data" class="boxTextForm" required>
+            </li>
+
+            <li>
+              <label for="tel">Telefone</label>
+              <br>
+              <input type="tel" id="tel" name="tel" class="boxTextForm">
+            </li>
+          </ol>
+        </fieldset>
+
+        <fieldset id="aluno" class="borda">
+          <legend>Já é aluno?</legend>
+          <ol class="listaForm">
+            <li>
+              <input type="radio" id="Aluno" name="aluno" value="alunoSim">
+              <label for="Aluno">Sim</label>
+            </li>
+
+            <li>
+              <input type="radio" id="ALUNO" name="aluno" value="alunoNão">
+              <label for="Aluno">Não</label>
+            </li>
+          </ol>
+        </fieldset>
+      </div>
+
+      <fieldset id="atividade" class="borda">
+        <legend>Escolha a atividade de seu interesse:</legend>
+        <ol class="listaForm">
+          <li>
+            <input type="checkbox" id="Dança" name="exercicio" value="Dança">
+            <label for="Dança">Dança</label>
+          </li>
+
+          <li>
+            <input type="checkbox" id="Musculação" name="exercicio" value="musculação">
+            <label for="Musculação">Musculação</label>
+          </li>
+
+          <li>
+            <input type="checkbox" id="Spinning" name="exercicio" value="Spping">
+            <label for="Spinning">Spinning</label>
+          </li>
+        </ol>
+      </fieldset>
+
+      <fieldset id="Comentario" class="borda">
+        <div>
+          <label for="comentario">Motivo do Contato:</label> <br>
+          <select name="Comentario" id="comentario" class="boxTextForm">
+            <option disabled value="EST">Selecione:</option>
+            <option value="duvida">Dúvida</option>
+            <option value="sugestao">Sugestão</option>
+            <option value="Reclamação">Reclamação</option>
+          </select>
+          <br>
+          <textarea name="Coment" id="coment" cols="30" rows="10" maxlength="2000" class="boxTextForm"></textarea> <br>
+          <input type="file" class="boxTextForm">
+        </div>
+        <br>
+        <input type="submit" value="Submeter" class="boxTextForm">
+        <input type="reset" value="Limpar" class="boxTextForm">
+      </fieldset>
+    </form>
+
+  </main>
+
+  <footer class="rodape">
+  </footer>
+</body>
+
+</html>
