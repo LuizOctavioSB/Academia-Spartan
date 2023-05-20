@@ -198,6 +198,39 @@ aside {
   background-color: rgb(242, 190, 67);
 }
 
+.form-field input:focus {
+  outline: none;
+}
+
+.form-field.error input {
+  border-color: red;
+}
+
+.form-field.success input {
+  border-color: green;
+}
+
+.form-field.success input[type="checkbox"] {
+  outline: 1px solid green;
+}
+
+.form-field small {
+  color: red;
+}
+
+.form-field.error input[type="checkbox"] {
+  outline: 1px solid red;
+}
+
+#mensagem{
+  outline: 1px solid black;
+  margin: 100px;
+  padding: 50px;
+  text-align: center;
+  background-color: rgb(180, 179, 179);
+}
+
+
 @media screen and (max-width: 600px) {
 
   *{
