@@ -150,6 +150,14 @@ aside {
   background-color: rgb(180, 179, 179);
 }
 
+#Comentario {
+  display: none;
+}
+
+#fotos img {
+  display: none;
+}
+
 #triste{
   margin-left: 10px;
 }

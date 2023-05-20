@@ -7,6 +7,11 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    #fotos img {
+      display: none;
+    }
+  </style>
   <title>Academia Spartan - Galeria</title>
 </head>
 
@@ -30,14 +35,14 @@
     <div id="fotos">
       <table>
         <tr>
-          <td><img src="Galeria/foto1.jpeg" height="300" width="400" alt="Imagem1"></td>
-          <td><img src="Galeria/foto2.jpeg" height="300" width="400" alt="Imagem2"></td>
-          <td><img src="Galeria/foto3.jpeg" height="300" width="400" alt="Imagem3"></td>
+          <td><img src="Galeria/foto1.jpeg" height="416" width="768" alt="Imagem1"></td>
+          <td><img src="Galeria/foto2.jpeg" height="416" width="768" alt="Imagem2"></td>
+          <td><img src="Galeria/foto3.jpeg" height="416" width="768" alt="Imagem3"></td>
         </tr>
         <tr>
-          <td><img src="Galeria/foto4.jpeg" height="300" width="400" alt="Imagem4"></td>
-          <td><img src="Galeria/foto5.jpeg" height="300" width="400" alt="Imagem5"></td>
-          <td><img src="Galeria/foto6.jpeg" height="300" width="400" alt="Imagem6"></td>
+          <td><img src="Galeria/foto4.jpeg" height="416" width="768" alt="Imagem4"></td>
+          <td><img src="Galeria/foto5.jpeg" height="416" width="768" alt="Imagem5"></td>
+          <td><img src="Galeria/foto6.jpeg" height="416" width="768" alt="Imagem6"></td>
         </tr>
       </table>
     </div>

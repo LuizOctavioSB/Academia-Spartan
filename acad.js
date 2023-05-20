@@ -102,67 +102,54 @@ const showSuccess = (input) => {
   error.textContent = '';
 }
 
-form.addEventListener('submit', function (e) {
-  // prevent the form from submitting
-  e.preventDefault();
+$(document).ready(function() {
+  $('input[name="exercicio"]').on('click', function() {
+    var selectedValue = $(this).val();
+    var placeholderText = '';
 
-  // validate forms
-  let isUsernameValid = checkUsername();
-  let isCPFValid = checkCPF();
-  let isEmailValid = checkEmail();
-  let isCursoValid = checkAtividade();
-  let isFormValid = isUsernameValid && isCPFValid && isCursoValid && isEmailValid;
-
-  if (isFormValid) {
-    atividadesHTML = "";
-    for (let i = 0; i < atividades.length; i++) {
-      if (atividades[i].checked) {
-        if (atividadesHTML != "") {
-          atividadesHTML += ", ";
-        }
-        atividadesHTML += atividades[i].nextElementSibling.innerHTML;
-      }
+    switch (selectedValue) {
+      case 'Dança':
+        placeholderText = 'Digite sua dúvida sobre dança';
+        break;
+      case 'musculação':
+        placeholderText = 'Digite sua dúvida sobre musculação';
+        break;
+      case 'Spinning':
+        placeholderText = 'Digite sua dúvida sobre spinning';
+        break;
     }
-    const div = document.createElement('div');
-    div.innerHTML = `
-      <p>É aluno?     ${document.querySelector('input[name="aluno"]:checked').value.trim()}</p>
-      <p>Atividades:      ${atividadesHTML}</p>
-      <p>CPF:         ${cpf.value.trim()}</p>
-      <p>Nome:        ${nome.value.trim()}</p>
-      <p>Email:       ${document.querySelector('#email').value.trim()}</p>
-      <p>Nascimento:  ${document.querySelector('#Data').value.trim()}</p>
-      <p>Telefone:   ${document.querySelector('#tel').value.trim()}</p>
-      <p>Comentário:       ${document.querySelector('#coment').value.trim()}</p>
-  `;
-    mensagem.appendChild(div);
-  }
+
+    $('#coment').attr('placeholder', placeholderText);
+
+    if ($(this).is(':checked')) {
+      $('#Comentario').show();
+    } else {
+      $('#Comentario').hide();
+    }
+  });
 });
+
+
+function showNextImage() {
+  var images = $("#fotos img");
+  var currentIndex = 0;
+
+  function fadeOutCurrentImage() {
+    images.eq(currentIndex).fadeOut(500, function() {
+      fadeInNextImage();
+    });
+  }
+
+  function fadeInNextImage() {
+    currentIndex = (currentIndex + 1) % images.length;
+    images.eq(currentIndex).fadeIn(500, function() {
+      setTimeout(fadeOutCurrentImage, 1500);
+    });
+  }
+
+  fadeOutCurrentImage();
+}
 
 $(document).ready(function() {
-  // Hide all the images initially
-  $("#fotos img").hide();
-
-  // Function to display images one by one with a delay
-  function displayImages() {
-    var images = $("#fotos img");
-    var index = 0;
-
-    function showNextImage() {
-      $(images[index]).fadeIn(500).delay(1500).fadeOut(500, function() {
-        index++;
-        if (index >= images.length) {
-          index = 0; // Reinicia o índice para exibir as imagens novamente
-        }
-        showNextImage();
-      });
-    }
-
-    showNextImage();
-  }
-
-  // Call the displayImages function
-  displayImages();
+  showNextImage();
 });
-
-
-

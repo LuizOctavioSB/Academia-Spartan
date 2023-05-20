@@ -38,16 +38,16 @@
     <?php
     // Array de ex-professores com seus anos iniciais e finais
     $exProfs = array(
-      array("Nome do Professor 1", 2010, 2015),
-      array("Nome do Professor 2", 2012, 2016),
-      array("Nome do Professor 3", 2014, 2017),
-      array("Nome do Professor 4", 2015, 2018),
-      array("Nome do Professor 5", 2016, 2019),
-      array("Nome do Professor 6", 2017, 2020),
-      array("Nome do Professor 7", 2018, 2021),
-      array("Nome do Professor 8", 2019, 2022),
-      array("Nome do Professor 9", 2020, 2023),
-      array("Nome do Professor 10", 2021, 2024)
+      array("Professor 1", 2010, 2015),
+      array("Professor 2", 2012, 2016),
+      array("Professor 3", 2014, 2017),
+      array("Professor 4", 2015, 2018),
+      array("Professor 5", 2016, 2019),
+      array("Professor 6", 2017, 2020),
+      array("Professor 7", 2018, 2021),
+      array("Professor 8", 2019, 2022),
+      array("Professor 9", 2020, 2023),
+      array("Professor 10", 2021, 2024)
     );
     
     // Verifica se o array não está vazio
