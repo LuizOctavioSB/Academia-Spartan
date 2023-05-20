@@ -1,6 +1,6 @@
 
 <header class="cabecalho">
-    <a href="AcademiaSpartan.html" title="Academia Spartan">
+    <a href="AcademiaSpartan.php" title="Academia Spartan">
       <img src="Galeria/logo.png" alt="Academia Spartan" width="270" height="54">
     </a>
     <nav>
