@@ -18,8 +18,7 @@
   <main>
     <h3 class="bemVindos">Insira seus dados abaixo:</h3>
 
-    <form action="AcademiaSpartanAgrad.html" method="get" id="form">
-
+    <form action="AcademiaSpartanAgrad.php" method="post" id="form">
       <div>
         <aside class="borda">
           <h3>Especialidades:</h3>

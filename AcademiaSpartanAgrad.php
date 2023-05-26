@@ -14,16 +14,18 @@
 <?php 
     include "Header.php";
   ?>
-
   <main class="agrad">
     <div class="bemVindos">
     <h2>Obrigado pelo contato!</h2>
     <p>O contato será analisado e respondido em breve.</p>
     </div>
   </main>
-
+  <div class="dadosUsuario">
+    <?php 
+      include "dadosForm.php" 
+    ?>
+  </div>
   <footer class="rodapeagrad">
   </footer>
-  
 </body>
 </html>
