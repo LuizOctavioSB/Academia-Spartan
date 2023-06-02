@@ -145,7 +145,7 @@
       <h3>Mensagem:</h3>
     </div>
     <?php
-    require " . ./bancodedados.php";
+    include "bancodedados.php";
     $pdo = mysqlConnect();
     ?>
   </main>
