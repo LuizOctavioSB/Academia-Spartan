@@ -11,8 +11,8 @@
 </head>
 
 <body>
-<?php 
-    include "Header.php";
+  <?php
+  include "Header.php";
   ?>
 
   <main>
@@ -144,6 +144,10 @@
     <div id="mensagem">
       <h3>Mensagem:</h3>
     </div>
+    <?php
+    require " . ./bancodedados.php";
+    $pdo = mysqlConnect();
+    ?>
   </main>
 
   <footer class="rodape">
